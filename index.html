@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="weather.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oswald:wght@200;400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Weather 😎</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="heading">Awesome Weather 😎</h1>
+    </header>
+
+    <main>
+        <center>
+            <div id="weather-card">
+                <div id="tile">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+
+
+                <div style="display: flex; flex-direction: row; margin-top: 2em; justify-content: center;">
+                    <p style="color: #d9e3e8; font-family: 'Architects Daughter', cursive;
+                    font-family: 'Oswald', sans-serif;">Right now in</p>
+                    <input type="text" id="search-bar" value="amritsar">
+                    <p style="color: #d9e3e8; font-family: 'Architects Daughter', cursive;
+                    font-family: 'Oswald', sans-serif;" id="status">, status</p>
+                </div>
+
+                <div id="main-info">
+                    <img id="weather-img" src="clear-sky.png" alt="unable to load status image">
+                    <p id="main-temp">-66 <sup>o</sup>C</p>
+
+                    <div id="sub-info">
+                        <h5 id="wind-speed">💨 14 <sub style="font-weight: 400;">mph</sub></h5>
+                        <h5 id="min-temp"> </h5>
+                        <h5 id="max-temp">🌡45 <sup style="font-weight: 400;">o</sup>C</h5>
+                    </div>
+                </div>
+
+                <div id="more-info">
+                    <p id="date-w"></p>
+                    <p id="coun-city">Amritsar,IN</p>
+                </div>
+            </div>
+        </center>
+    </main>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
+
+
+</html>
